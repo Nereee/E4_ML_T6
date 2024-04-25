@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+#logof {
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+}

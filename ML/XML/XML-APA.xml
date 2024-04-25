@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XSL-APA.xsl"?>
+<enpresa>
+    <langileak>
+        <langilea>
+            <id>1</id>
+            <izena>Pedro Picapiedra</izena>
+            <posta>pedro@gmail.com</posta>
+            <departamentua>SMR</departamentua>
+            <ardura>Topologoa</ardura>
+            <telefonoa>683 33 33 33</telefonoa>
+            <helbidea>Altzaga goikoa errepidea , 100</helbidea>
+        </langilea>
+        <langilea>
+            <id>2</id>
+            <izena>Maria Unpa</izena>
+            <posta>maria@gmail.com</posta>
+            <departamentua>DAM</departamentua>
+            <ardura>Programatzailea</ardura>
+            <telefonoa>684 44 44 44</telefonoa>
+            <helbidea>Adolfo Urioste kalea, 200</helbidea>
+        </langilea>
+    </langileak>
+
+    <departamentuak>
+        <departamentua>
+            <izena>SMR</izena>
+            <kokapena>Erandio</kokapena>
+            <telefonoa>682 22 22 22</telefonoa>
+            <auzoa>Jado, kalea, 300</auzoa>
+        </departamentua>
+        <departamentua>
+            <izena>DAM</izena>
+            <kokapena>Gernika</kokapena>
+            <telefonoa>681 11 11 11</telefonoa>
+            <auzoa>Lorategieta auzoa, 400</auzoa>
+        </departamentua>
+    </departamentuak>
+
+    <ardurak>
+        <ardura>
+            <izena>Topologoa</izena>
+            <deskribapena>Sare lokalen diseinu fisikoa egiteaz arduratzen da</deskribapena>
+        </ardura>
+        <ardura>
+            <izena>Programatzailea</izena>
+            <deskribapena>Aplikazioak sortzeko beharrezko kodeak sortzen ditu</deskribapena>
+        </ardura>
+    </ardurak>
+</enpresa>
