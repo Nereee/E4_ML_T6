@@ -2,49 +2,201 @@
 <?xml-stylesheet type="text/xsl" href="XSL-APA.xsl"?>
 <enpresa>
     <langileak>
-        <langilea>
-            <id>1</id>
-            <izena>Pedro Picapiedra</izena>
-            <posta>pedro@gmail.com</posta>
-            <departamentua>SMR</departamentua>
-            <ardura>Topologoa</ardura>
-            <telefonoa>683 33 33 33</telefonoa>
-            <helbidea>Altzaga goikoa errepidea , 100</helbidea>
-        </langilea>
-        <langilea>
-            <id>2</id>
-            <izena>Maria Unpa</izena>
-            <posta>maria@gmail.com</posta>
-            <departamentua>DAM</departamentua>
-            <ardura>Programatzailea</ardura>
-            <telefonoa>684 44 44 44</telefonoa>
-            <helbidea>Adolfo Urioste kalea, 200</helbidea>
-        </langilea>
-    </langileak>
+    <langilea>
+        <nan>12345678A</nan>
+        <izena>Jon</izena>
+        <abizena>Lopez</abizena>
+        <jaiotzedata>1980-03-05</jaiotzedata>
+        <posta>jon.lopez@enpresa.eus</posta>
+        <telefonoa>(+34) 123 456 789</telefonoa>
+         <helbidea>
+            <kalea>Kale nagusia</kalea>
+            <zbk>5</zbk>
+            <herria postaKodea="48004">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Zuzendaritza</ardura>
+        <kontratdata>2010-06-07</kontratdata>
+        <soldata>2000</soldata>
+        <departamentua>1</departamentua>
+        <img>../irudiak/alberto.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>23456789B</nan>
+        <izena>Ane</izena>
+        <abizena>Garcia</abizena>
+        <jaiotzedata>1995-01-15</jaiotzedata>
+        <posta>ane.garcia@enpresa.eus</posta>
+        <telefonoa>(+34) 987 654 321</telefonoa>
+         <helbidea>
+            <kalea>Gorbeia</kalea>
+            <zbk>75</zbk>
+            <herria postaKodea="48001">Artea</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Analista</ardura>
+        <kontratdata>2012-03-09</kontratdata>
+        <soldata>1800</soldata>
+        <departamentua>2</departamentua>
+        <img>../irudiak/ane.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>34567890C</nan>
+        <izena>Mikel</izena>
+        <abizena>Uria</abizena>
+        <jaiotzedata>2000-06-17</jaiotzedata>
+        <posta>mikel.uria@enpresa.eus</posta>
+        <telefonoa>(+34) 567 890 123</telefonoa>
+         <helbidea>
+            <kalea >Erribera Kalea</kalea>
+            <zbk>7</zbk>
+            <herria postaKodea="48007">Lekeitio</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Analista</ardura>
+        <kontratdata>2008-08-14</kontratdata>
+        <soldata>1900</soldata>
+  <departamentua>3</departamentua>
+  <img>../irudiak/escobar.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>45678901D</nan>
+        <izena>Ane</izena>
+        <abizena>Etxebarria</abizena>
+        <jaiotzedata>2001-05-10</jaiotzedata>
+        <posta>ane.etxebarria@enpresa.eus</posta>
+        <telefonoa>(+34) 321 654 987</telefonoa>
+        <helbidea>
+            <kalea >Euskal Herria Etorbidea</kalea>
+            <zbk>3</zbk>
+            <herria postaKodea="48012">Donostia</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Langilea</ardura>
+        <kontratdata>2014-11-17</kontratdata>
+        <soldata>2200</soldata>
+          <departamentua>Lege-saila</departamentua>
+          <img>../irudiak/juan.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>56789012E</nan>
+        <izena>Markel</izena>
+        <abizena>Landa</abizena>
+        <jaiotzedata>1980-03-05</jaiotzedata>
+        <posta>markel.landa@enpresa.eus</posta>
+        <telefonoa>(+34) 789 012 345</telefonoa>
+        <helbidea>
+            <kalea >Mendia Etorbidea</kalea>
+            <zbk>21</zbk>
+            <herria postaKodea="48000">Eibar</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Langilea</ardura>
+        <kontratdata>2010-11-05</kontratdata>
+        <soldata>2100</soldata>
+        <departamentua>4</departamentua>
+      <img>../irudiak/markel.jpg</img>
+
+    </langilea>
+    <langilea>
+        <nan>67890123F</nan>
+        <izena>Amaia</izena>
+        <abizena>Lopez</abizena>
+        <jaiotzedata>1980-03-05</jaiotzedata>
+        <posta>amaia.lopez@enpresa.eus</posta>
+        <telefonoa>(+34) 456 789 012</telefonoa>
+        <helbidea>
+            <kalea >San Roke Kalea</kalea>
+            <zbk>15</zbk>
+            <herria postaKodea="48000">Bermeo</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Zuzendaritza</ardura>
+        <kontratdata>2007-06-07</kontratdata>
+        <soldata>2500</soldata>
+        <departamentua>5</departamentua>
+            <img>../irudiak/jorge.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>78901234G</nan>
+        <izena>Iker</izena>
+        <abizena>Mendizabal</abizena>
+        <jaiotzedata>1980-03-05</jaiotzedata>
+        <posta>iker.mendizabal@enpresa.eus</posta>
+        <telefonoa>(+34) 890 123 456</telefonoa>
+        <helbidea>
+        <kalea>Bizkaia Plaza</kalea>
+            <zbk>10</zbk>
+            <herria postaKodea="41005">Bilbao</herria>
+            <probintzia>Gipuzkoa</probintzia>
+        </helbidea>
+        <ardura>Analista</ardura>
+        <kontratdata></kontratdata>
+        <soldata>1600</soldata>
+         <departamentua>6</departamentua>
+          <img>../irudiak/iker.jpg</img>
+    </langilea>
+</langileak>
+
 
     <departamentuak>
-        <departamentua>
-            <izena>SMR</izena>
-            <kokapena>Erandio</kokapena>
-            <telefonoa>682 22 22 22</telefonoa>
-            <auzoa>Jado, kalea, 300</auzoa>
-        </departamentua>
-        <departamentua>
-            <izena>DAM</izena>
-            <kokapena>Gernika</kokapena>
-            <telefonoa>681 11 11 11</telefonoa>
-            <auzoa>Lorategieta auzoa, 400</auzoa>
-        </departamentua>
-    </departamentuak>
+    <departamentua id="1">
+        <izena>Giza baliabideak</izena>
+        <helbidea> Gran Via Kalea,12, Bilbo</helbidea>
+        <telefono>(+34) 123 456 789</telefono>
+        <posta>gb@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="2">
+        <izena>Marketin</izena>
+        <helbidea>Larrazabal Kalea5, Getxo</helbidea>
+        <telefono>(+34) 987 654 321</telefono>
+        <posta>marketin@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="3">
+        <izena>Zuzendaritza Orokorra</izena>
+        <helbidea>Iparragirre Plaza, 3, Durango</helbidea>
+        <telefono>(+34) 567 890 123</telefono>
+        <posta>zuzendaritza@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="4">
+        <izena>Lege-saila</izena>
+        <helbidea>Barrainkua Kalea, 8, Gernika</helbidea>
+        <telefono>(+34) 321 654 987</telefono>
+        <posta>legeak@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="5">
+        <izena>IT</izena>
+        <helbidea>Aldapa Etorbidea, 23, Erandio</helbidea>
+        <telefono>(+34) 789 012 345</telefono>
+        <posta>it@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="6">
+        <izena>Salmentak</izena>
+        <helbidea>San Martin Kalea, 7, Bermeo</helbidea>
+        <telefono>(+34) 456 789 012</telefono>
+        <posta>salmentak@enpresa.eus</posta>
+    </departamentua>
+    <departamentua id="7">
+        <izena>Finantzak</izena>
+        <helbidea>Euskal Herria Plaza, 1, Leioa</helbidea>
+        <telefono>(+34) 890 123 456</telefono>
+        <posta>finantzak@enpresa.eus</posta>
+    </departamentua>
+</departamentuak>
 
     <ardurak>
-        <ardura>
-            <izena>Topologoa</izena>
-            <deskribapena>Sare lokalen diseinu fisikoa egiteaz arduratzen da</deskribapena>
+        <ardura id="1">
+            <izena>Zuzendaritza</izena>
+            <deskribapena>Departamentuko buruak dira</deskribapena>
         </ardura>
-        <ardura>
-            <izena>Programatzailea</izena>
-            <deskribapena>Aplikazioak sortzeko beharrezko kodeak sortzen ditu</deskribapena>
+        <ardura id="2">
+            <izena>Analista</izena>
+            <deskribapena>Lanak egiten direnean errepasatzen dituzte</deskribapena>
+        </ardura>
+        <ardura id="3">
+            <izena>Langilea</izena>
+            <deskribapena>Lanak egiten dituzte</deskribapena>
         </ardura>
     </ardurak>
 </enpresa>
+
