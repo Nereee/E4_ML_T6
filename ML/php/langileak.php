@@ -6,7 +6,7 @@
    $arauak ->load("../xml/langileak.xsl");
 
    $datuak = new DOMDocument();
-   $datuak->load("XSL-APA.xml");
+   $datuak->load("../xml/XML-APA.xml");
 
 /* Arau horiek aplikatzeko "motor" bat sortzen dugu. Transformazio-arauak kargatuko dizkizugu. Arau horiek aplikatuko dizkiogu dokumentuari */
 

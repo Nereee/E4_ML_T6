@@ -10,7 +10,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <title>APA music</title>
                 <link rel="stylesheet" href="../css/plantilla.css"/>
-                <style>      
+                <style>
                     div.employee-container {
                         display: flex;
                         align-items: center;
@@ -42,15 +42,15 @@
                 <!-- HEADER -->
                 <header>
                     <div id="image-text-container">
-                        <a href="../html/hasiera.html"><img src="../irudiak/logo.png" alt="logoa"/></a>
+                        <a href="../html/hasiera.html.html"><img src="../irudiak/logo.png" alt="logoa"/></a>
                         <h1>APA MUSIC</h1>
                     </div>
                     <div>
                         <nav>
                             <ul>
                                 <li><a href="../html/hasiera.html">Hasiera</a></li>
-                                <li><a href="../php/langileak.html">Langileak</a></li>
-                                <li><a href="../php/departamentuak.php">Departamentuak</a></li>
+                                <li><a href="../php/langileak.php">Langileak</a></li>
+                                <li><a href="../php/departamentuak.html">Departamentuak</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -58,22 +58,14 @@
 
                 <!-- MAIN -->
                 <main>
-                    <h2>Langileak</h2>
-                    <xsl:for-each select="langileak/langilea">
+                    <h2>Departamentuak</h2>
+                    <xsl:for-each select="departamentuak/departamentua">
                         <div class="employee-container">
-                            <img src="{img}" alt="Employee Photo"/>
                             <div class="employee-details">
                                 <h3><xsl:value-of select="izena"/></h3>
-                                <h3><xsl:value-of select="abizena"/></h3>
-                                <p>NAN: <xsl:value-of select="nan"/></p>
-                                <p>Jaiotze Data: <xsl:value-of select="jaiotzedata"/></p>
-                                <p>Posta: <xsl:value-of select="posta"/></p>
-                                <p>Telefonoa: <xsl:value-of select="telefonoa"/></p>
                                 <p>Helbidea: <xsl:value-of select="helbidea/kalea"/>, <xsl:value-of select="helbidea/zbk"/>, <xsl:value-of select="helbidea/herria"/></p>
-                                <p>Ardura: <xsl:value-of select="ardura"/></p>
-                                <p>Kontratdata: <xsl:value-of select="kontratdata"/></p>
-                                <p>Soldata: <xsl:value-of select="soldata"/></p>
-                                <p>Departamentua: <xsl:value-of select="departamentua"/></p>
+                                <p>Telefonoa: <xsl:value-of select="telefono"/></p>
+                                <p>Posta: <xsl:value-of select="posta"/></p>
                             </div>
                         </div>
                     </xsl:for-each>

@@ -1,0 +1,39 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 8px;
+}
+
+main img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
