@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="XSL-APA.xsl"?>
-<enpresa>
+<enpresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <langileak>
     <langilea>
         <nan>12345678A</nan>
@@ -199,4 +199,3 @@
         </ardura>
     </ardurak>
 </enpresa>
-
