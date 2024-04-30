@@ -22,7 +22,7 @@
                         <nav>
                             <ul>
                                 <li><a href="../html/hasiera.html">Hasiera</a></li>
-                                <li><a href="../php/langileak.html">Langileak</a></li>
+                                <li><a href="../php/langileak.php">Langileak</a></li>
                                 <li><a href="../php/departamentuak.php">Departamentuak</a></li>
                             </ul>
                         </nav>

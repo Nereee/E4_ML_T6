@@ -135,6 +135,198 @@
             <departamentua>3</departamentua>
             <img>../irudiak/iker.jpg</img>
         </langilea>
+        
+        
+        <langilea>
+        <nan>87654321B</nan>
+        <izena>Ana</izena>
+        <abizena>Martinez</abizena>
+        <jaiotzedata>1985-09-12</jaiotzedata>
+        <posta>ana.martinez@enpresa.eus</posta>
+        <telefonoa>(+34) 987 654 321</telefonoa>
+        <helbidea>
+            <kalea>Calle Mayor, 10</kalea>
+            <zbk>10</zbk>
+            <herria postaKodea="48001">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Analista de datos</ardura>
+        <kontratdata>2012-04-15</kontratdata>
+        <soldata>2200</soldata>
+        <departamentua>2</departamentua>
+        <img>../irudiak/ana.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>23456789C</nan>
+        <izena>David</izena>
+        <abizena>Garcia</abizena>
+        <jaiotzedata>1978-12-28</jaiotzedata>
+        <posta>david.garcia@enpresa.eus</posta>
+        <telefonoa>(+34) 654 987 321</telefonoa>
+        <helbidea>
+            <kalea>Calle San Juan, 5</kalea>
+            <zbk>15</zbk>
+            <herria postaKodea="48002">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Desarrollador</ardura>
+        <kontratdata>2010-10-20</kontratdata>
+        <soldata>2400</soldata>
+        <departamentua>3</departamentua>
+        <img>../irudiak/david.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>34567890D</nan>
+        <izena>María</izena>
+        <abizena>Rodríguez</abizena>
+        <jaiotzedata>1982-05-20</jaiotzedata>
+        <posta>maria.rodriguez@enpresa.eus</posta>
+        <telefonoa>(+34) 789 123 456</telefonoa>
+        <helbidea>
+            <kalea>Plaza España, 15</kalea>
+            <zbk>20</zbk>
+            <herria postaKodea="48003">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Gerente de Ventas</ardura>
+        <kontratdata>2008-07-10</kontratdata>
+        <soldata>3000</soldata>
+        <departamentua>4</departamentua>
+        <img>../irudiak/maria.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>45678901E</nan>
+        <izena>Javier</izena>
+        <abizena>Martín</abizena>
+        <jaiotzedata>1987-03-15</jaiotzedata>
+        <posta>javier.martin@enpresa.eus</posta>
+        <telefonoa>(+34) 876 543 210</telefonoa>
+        <helbidea>
+            <kalea>Avenida Libertad, 28</kalea>
+            <zbk>25</zbk>
+            <herria postaKodea="48004">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Ingeniero de Software</ardura>
+        <kontratdata>2015-02-28</kontratdata>
+        <soldata>2800</soldata>
+        <departamentua>5</departamentua>
+        <img>../irudiak/javier.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>56789012F</nan>
+        <izena>Elena</izena>
+        <abizena>Gómez</abizena>
+        <jaiotzedata>1984-11-08</jaiotzedata>
+        <posta>elena.gomez@enpresa.eus</posta>
+        <telefonoa>(+34) 765 432 109</telefonoa>
+        <helbidea>
+            <kalea>Calle Mayor, 3</kalea>
+            <zbk>30</zbk>
+            <herria postaKodea="48005">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Analista Financiero</ardura>
+        <kontratdata>2013-09-20</kontratdata>
+        <soldata>2500</soldata>
+        <departamentua>6</departamentua>
+        <img>../irudiak/elena.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>67890123G</nan>
+        <izena>Pablo</izena>
+        <abizena>Ruiz</abizena>
+        <jaiotzedata>1990-07-25</jaiotzedata>
+        <posta>pablo.ruiz@enpresa.eus</posta>
+        <telefonoa>(+34) 654 321 098</telefonoa>
+        <helbidea>
+            <kalea>Calle Gran Vía, 12</kalea>
+            <zbk>35</zbk>
+            <herria postaKodea="48006">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Marketing Manager</ardura>
+        <kontratdata>2014-06-15</kontratdata>
+        <soldata>2700</soldata>
+        <departamentua>7</departamentua>
+        <img>../irudiak/pablo.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>78901234H</nan>
+        <izena>Lucía</izena>
+        <abizena>Sanchez</abizena>
+        <jaiotzedata>1989-04-30</jaiotzedata>
+        <posta>lucia.sanchez@enpresa.eus</posta>
+        <telefonoa>(+34) 543 210 987</telefonoa>
+        <helbidea>
+            <kalea>Plaza Indautxu, 7</kalea>
+            <zbk>40</zbk>
+            <herria postaKodea="48007">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Recursos Humanos</ardura>
+        <kontratdata>2011-11-05</kontratdata>
+        <soldata>2300</soldata>
+        <departamentua>8</departamentua>
+        <img>../irudiak/lucia.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>89012345I</nan>
+        <izena>Carlos</izena>
+        <abizena>López</abizena>
+        <jaiotzedata>1983-08-18</jaiotzedata>
+        <posta>carlos.lopez@enpresa.eus</posta>
+        <telefonoa>(+34) 432 109 876</telefonoa>
+        <helbidea>
+            <kalea>Calle Zamakoa, 6</kalea>
+            <zbk>45</zbk>
+            <herria postaKodea="48008">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Consultor Financiero</ardura>
+        <kontratdata>2009-09-25</kontratdata>
+        <soldata>2600</soldata>
+        <departamentua>9</departamentua>
+        <img>../irudiak/carlos.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>90123456J</nan>
+        <izena>Sara</izena>
+        <abizena>Ramírez</abizena>
+        <jaiotzedata>1991-12-05</jaiotzedata>
+        <posta>sara.ramirez@enpresa.eus</posta>
+        <telefonoa>(+34) 321 098 765</telefonoa>
+        <helbidea>
+            <kalea>Plaza Moyúa, 4</kalea>
+            <zbk>50</zbk>
+            <herria postaKodea="48009">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Analista de Marketing</ardura>
+        <kontratdata>2016-03-10</kontratdata>
+        <soldata>2500</soldata>
+        <departamentua>10</departamentua>
+        <img>../irudiak/sara.jpg</img>
+    </langilea>
+    <langilea>
+        <nan>01234567K</nan>
+        <izena>Alberto</izena>
+        <abizena>Rodríguez</abizena>
+        <jaiotzedata>1986-06-23</jaiotzedata>
+        <posta>alberto.rodriguez@enpresa.eus</posta>
+        <telefonoa>(+34) 210 987 654</telefonoa>
+        <helbidea>
+            <kalea>Calle Gran Vía, 20</kalea>
+            <zbk>55</zbk>
+            <herria postaKodea="48010">Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <ardura>Desarrollador Web</ardura>
+        <kontratdata>2017-08-12</kontratdata>
+        <soldata>2700</soldata>
+        <departamentua>11</departamentua>
+        <img>../irudiak/alberto2.jpg</img>
+    </langilea>
     </langileak>
 
     <departamentuak>
