@@ -14,11 +14,12 @@
             <body>
                 <!-- HEADER -->
                 <header>
-                    <div id="image-text-container">
+                    <div>
                         <a href="../html/hasiera.html"><img src="../irudiak/logo.png" alt="logoa"/></a>
                         <h1>APA MUSIC</h1>
                     </div>
                     <div>
+                        <!--NABEGAZIO BARRA-->
                         <nav>
                             <ul>
                                 <li><a href="../html/hasiera.html">Hasiera</a></li>
@@ -32,10 +33,11 @@
                 <!-- MAIN -->
                 <main>
                     <h2>Langileak</h2>
+                    <!--XML dokumentuaren bihurketa-->
                     <xsl:for-each select="langileak/langilea">
-                        <div class="employee-container">
+                        <div class="LD">
                             <img src="{img}" alt="Employee Photo"/>
-                            <div class="employee-details">
+                            <div>
                                 <h3><xsl:value-of select="izena"/></h3>
                                 <h3><xsl:value-of select="abizena"/></h3>
                                 <p>NAN: <xsl:value-of select="nan"/></p>

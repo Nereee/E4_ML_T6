@@ -32,9 +32,10 @@
                 <!-- MAIN -->
                 <main>
                     <h2>Departamentuak</h2>
+                    <!--XML dokumentuaren bihurketa-->
                     <xsl:for-each select="departamentuak/departamentua">
-                        <div class="employee-container">
-                            <div class="employee-details">
+                        <div class="LD">
+                            <div>
                                 <h3><xsl:value-of select="izena"/></h3>
                                 <p>Helbidea: <xsl:value-of select="helbidea/kalea"/>, <xsl:value-of select="helbidea/zbk"/>, <xsl:value-of select="helbidea/herria"/></p>
                                 <p>Telefonoa: <xsl:value-of select="telefono"/></p>
