@@ -259,3 +259,28 @@ footer a:hover {
     }
 }
 
+#gohiburua ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#gohiburua a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#desplegablea-a {
+    display: none;
+    position: absolute;
+    background-color:#333;
+    min-width: 101px;
+}
+
+.dropdown:hover #desplegablea-a {
+    display: block;
+}

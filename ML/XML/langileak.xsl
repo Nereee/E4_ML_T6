@@ -3,28 +3,37 @@
     <xsl:template match="/enpresa">
         <html lang="zxx">
             <head>
-                <meta charset="utf-8"/>
-                <meta name="author" content="6.Taldea"/>
-                <meta name="keywords" content="Musica, Abestiak, Albumak, Podcast"/>
-                <meta name="description" content="APA music app web"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta charset="utf-8" />
+                <meta name="author" content="6.Taldea" />
+                <meta name="keywords" content="Musica, Abestiak, Albumak, Podcast" />
+                <meta name="description" content="APA music app web" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>APA music</title>
-                <link rel="stylesheet" href="../css/plantilla.css"/>
+                <link rel="stylesheet" href="../css/plantilla.css" />
             </head>
             <body>
                 <!-- HEADER -->
                 <header>
                     <div>
-                        <a href="../html/hasiera.html"><img src="../irudiak/logo.png" alt="logoa"/></a>
+                        <a href="../html/hasiera.html">
+                            <img src="../irudiak/logo.png" alt="logoa" />
+                        </a>
                         <h1>APA MUSIC</h1>
                     </div>
                     <div>
-                        <!--NABEGAZIO BARRA-->
+                        <!--NABEGAZIO
+                        BARRA-->
                         <nav>
                             <ul>
-                                <li><a href="../html/hasiera.html">Hasiera</a></li>
-                                <li><a href="../php/langileak.php">Langileak</a></li>
-                                <li><a href="../php/departamentuak.php">Departamentuak</a></li>
+                                <li>
+                                    <a href="../html/hasiera.html">Hasiera</a>
+                                </li>
+                                <li>
+                                    <a href="../php/langileak.php">Langileak</a>
+                                </li>
+                                <li>
+                                    <a href="../php/departamentuak.php">Departamentuak</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -32,23 +41,63 @@
 
                 <!-- MAIN -->
                 <main>
+
                     <h2>Langileak</h2>
-                    <!--XML dokumentuaren bihurketa-->
+                    <!-- Langileak hurrengo datuak edukiko dituzte -->
+                    <div class="LD">
+                        <h4>Aukeratu departamentua</h4>
+                        <select class="department-filter">
+                            <option value="">Hautatu departamentua...</option>
+                            <xsl:for-each select="departamentuak/departamentua">
+                                <option value="{@id}">
+                                    <xsl:value-of select="izena" />
+                                </option>
+                            </xsl:for-each>
+                        </select>
+
+                        <div>
+                            <h4>Aukeratu ardura</h4>
+                            <select class="department-filter">
+                                <option value="">Hautatu ardura...</option>
+                                <xsl:for-each select="ardurak/ardura">
+                                    <option value="{@id}">
+                                        <xsl:value-of select="izena" />
+                                    </option>
+                                </xsl:for-each>
+                            </select>
+                        </div>
+                    </div>
+
                     <xsl:for-each select="langileak/langilea">
                         <div class="LD">
-                            <img src="{img}" alt="Employee Photo"/>
+                            <!-- Langilearen irudia erakutsi -->
+                            <img src="{img}" alt="Employee Photo" />
                             <div>
-                                <h3><xsl:value-of select="izena"/></h3>
-                                <h3><xsl:value-of select="abizena"/></h3>
-                                <p>NAN: <xsl:value-of select="nan"/></p>
-                                <p>Jaiotze Data: <xsl:value-of select="jaiotzedata"/></p>
-                                <p>Posta: <xsl:value-of select="posta"/></p>
-                                <p>Telefonoa: <xsl:value-of select="telefonoa"/></p>
-                                <p>Helbidea: <xsl:value-of select="helbidea/kalea"/>, <xsl:value-of select="helbidea/zbk"/>, <xsl:value-of select="helbidea/herria"/></p>
-                                <p>Ardura: <xsl:value-of select="ardura"/></p>
-                                <p>Kontratdata: <xsl:value-of select="kontratdata"/></p>
-                                <p>Soldata: <xsl:value-of select="soldata"/></p>
-                                <p>Departamentua: <xsl:value-of select="departamentua"/></p>
+                                <h3>
+                                    <xsl:value-of select="izena" />
+                                </h3>
+                                <h3>
+                                    <xsl:value-of select="abizena" />
+                                </h3>
+                                <p>NAN: <xsl:value-of select="nan" /></p>
+                                <p>Jaiotze Data: <xsl:value-of select="jaiotzedata" /></p>
+                                <p>Posta: <xsl:value-of select="posta" /></p>
+                                <p>Telefonoa: <xsl:value-of select="telefonoa" /></p>
+                                <p>Helbidea: <xsl:value-of select="helbidea/kalea" />, <xsl:value-of
+                                        select="helbidea/zbk" />, <xsl:value-of
+                                        select="helbidea/herria" /></p>
+                                <xsl:variable name="ardura_id" select="ardura" />
+                                <xsl:for-each select="/enpresa/ardurak/ardura[@id = $ardura_id]">
+                                    <p>Ardura: <xsl:value-of select="izena" /></p>
+                                </xsl:for-each>
+                                <p>Kontratdata: <xsl:value-of select="kontratdata" /></p>
+                                <p>Soldata: <xsl:value-of select="soldata" /></p>
+                                <!-- Departamentuaren izena lortu id-a erabiliz -->
+                                <xsl:variable name="departamentu_id" select="departamentua" />
+                                <xsl:for-each
+                                    select="/enpresa/departamentuak/departamentua[@id = $departamentu_id]">
+                                    <p>Departamentua: <xsl:value-of select="izena" /></p>
+                                </xsl:for-each>
                             </div>
                         </div>
                     </xsl:for-each>
@@ -57,18 +106,35 @@
                 <!-- FOOTER -->
                 <footer>
                     <p>APA music experience</p>
-                    <img id="logoa" src="../irudiak/logo.png" alt="Gure taldea"/>
+                    <img id="logoa" src="../irudiak/logo.png" alt="Gure taldea" />
                     <h6 class="fi">Online sareak</h6>
                     <div id="sareak">
-                        <a href="https://www.instagram.com/" target="_blank"><img class="fi" src="../irudiak/instagram.png" alt="Instagram"/></a>
-                        <a href="https://twitter.com/?lang=es" target="_blank"><img class="fi" src="../irudiak/twitter.png" alt="Twitter"/></a>
-                        <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img class="fi" src="../irudiak/facebook.png" alt="Facebook"/></a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="fi" src="../irudiak/instagram.png" alt="Instagram" />
+                        </a>
+                        <a href="https://twitter.com/?lang=es" target="_blank">
+                            <img class="fi" src="../irudiak/twitter.png" alt="Twitter" />
+                        </a>
+                        <a href="https://www.facebook.com/?locale=es_ES" target="_blank">
+                            <img class="fi" src="../irudiak/facebook.png" alt="Facebook" />
+                        </a>
                     </div>
-                    <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-                        <img class="fi" style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="1"/>
-                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="2"/>
-                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="3"/>
-                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="4"/>
+                    <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+                        target="_blank" rel="license noopener noreferrer"
+                        style="display:inline-block;">
+                        <img class="fi"
+                            style="height:22px;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                            alt="1" />
+                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                            alt="2" />
+                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                            alt="3" />
+                        <img style="height:22px;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
+                            alt="4" />
                     </a>
                 </footer>
             </body>
