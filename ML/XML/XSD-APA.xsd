@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Langileak definizioa -->
+  <xsd:element name="enpresa">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="langileak">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="langilea" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="nan" type="xsd:string" />
+                    <xsd:element name="izena" type="xsd:string" />
+                    <xsd:element name="abizena" type="xsd:string" />
+                    <xsd:element name="jaiotzedata" type="xsd:date" />
+                    <xsd:element name="posta" type="xsd:string" />
+                    <xsd:element name="telefonoa" type="xsd:string" />
+                    <xsd:element name="helbidea">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="kalea" type="xsd:string" />
+                          <xsd:element name="zbk" type="xsd:string" />
+                          <xsd:element name="herria">
+                            <xsd:complexType>
+                              <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                  <xsd:attribute name="postaKodea" type="xsd:string" />
+                                </xsd:extension>
+                              </xsd:simpleContent>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="probintzia" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="ardura" type="xsd:string" />
+                    <xsd:element name="kontratdata" type="xsd:date" />
+                    <xsd:element name="soldata" type="xsd:decimal" />
+                    <xsd:element name="departamentua" type="xsd:integer" />
+                    <xsd:element name="img" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- Departamentuak definizioa -->
+        <xsd:element name="departamentuak">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="departamentua" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="izena" type="xsd:string" />
+                    <xsd:element name="helbidea">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="kalea" type="xsd:string" />
+                          <xsd:element name="zbk" type="xsd:string" />
+                          <xsd:element name="herria">
+                            <xsd:complexType>
+                              <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                  <xsd:attribute name="postaKodea" type="xsd:string" />
+                                </xsd:extension>
+                              </xsd:simpleContent>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="probintzia" type="xsd:string" />
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="telefono" type="xsd:string" />
+                    <xsd:element name="posta" type="xsd:string" />
+                  </xsd:sequence>
+                  <xsd:attribute name="id" type="xsd:integer" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- Ardurak definizioa -->
+        <xsd:element name="ardurak">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="ardura" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="izena" type="xsd:string" />
+                    <xsd:element name="deskribapena" type="xsd:string" />
+                  </xsd:sequence>
+                  <xsd:attribute name="id" type="xsd:integer" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

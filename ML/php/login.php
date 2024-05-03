@@ -7,15 +7,17 @@ $dbname = "db_spoty";
 $username = $_POST["erabiltzaile"];
 $password = $_POST["pasahitza"];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Erabiltzaile eta pasahitza ez dute bat egiten: " . $conn->connect_error);
-}
-else {
+try {
+    $mysqli = new mysqli($servername, $username, $password, $db);
     header("Location: ../html/hasiera.html");
     exit;
+
+} catch (mysqli_sql_exception $e) {
+    echo '<script>
+           alert("Erabiltzaile edo pasahitza txarto sartu duzu");
+           window.location.href = "../index.html";
+        </script>';
+    die("Connection failed: " . $e->getMessage());
 }
 
-$conn->close();
 ?>

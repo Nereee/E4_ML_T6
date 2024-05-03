@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/enpresa">
         <html lang="zxx">
@@ -50,9 +50,7 @@
 
                 <!-- MAIN -->
                 <main>
-
                     <h2>Langileak</h2>
-                    <!-- Langileak hurrengo datuak edukiko dituzte -->
                     <div class="LD">
                         <h3>ARDURAK</h3>
                         <div class="A">
@@ -65,8 +63,8 @@
                             </xsl:for-each>
                         </div>
                     </div>
-
-                    <xsl:for-each select="langileak/langilea">
+                    <!-- Langileak hurrengo datuak edukiko dituzte -->
+                    <xsl:for-each select="langileak/langilea[ardura = $id_ardura]">
                         <div class="LD">
                             <!-- Langilearen irudia erakutsi -->
                             <img src="{img}" alt="Employee Photo" />
@@ -86,14 +84,12 @@
                                 <p>Telefonoa: <xsl:value-of select="telefonoa" />
                                 </p>
                                 <p>Helbidea: <xsl:value-of select="helbidea/kalea" />
-                                <xsl:value-of select="helbidea/zbk" />
-                                <xsl:value-of select="helbidea/herria" />
+,                                <xsl:value-of select="helbidea/zbk" />
+,                                <xsl:value-of select="helbidea/herria" />
                             </p>
                             <xsl:variable name="ardura_id" select="ardura" />
                             <xsl:for-each select="/enpresa/ardurak/ardura[@id = $ardura_id]">
-                                <p>
-                                    <b>Ardura: <xsl:value-of select="izena" />
-                                    </b>
+                                <p>Ardura: <xsl:value-of select="izena" />
                                 </p>
                             </xsl:for-each>
                             <p>Kontratdata: <xsl:value-of select="kontratdata" />
@@ -103,9 +99,7 @@
                             <!-- Departamentuaren izena lortu id-a erabiliz -->
                             <xsl:variable name="departamentu_id" select="departamentua" />
                             <xsl:for-each select="/enpresa/departamentuak/departamentua[@id = $departamentu_id]">
-                                <p>
-                                    <b>Departamentua: <xsl:value-of select="izena" />
-                                    </b>
+                                <p>Departamentua: <xsl:value-of select="izena" />
                                 </p>
                             </xsl:for-each>
                         </div>
