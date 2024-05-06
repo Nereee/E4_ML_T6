@@ -14,16 +14,35 @@
             <body>
                 <!-- HEADER -->
                 <header>
-                    <div id="image-text-container">
-                        <a href="../html/hasiera.html"><img src="../irudiak/logo.png" alt="logoa"/></a>
+                    <div>
+                        <a href="../html/hasiera.html">
+                            <img src="../irudiak/logo.png" alt="logoa" />
+                        </a>
                         <h1>APA MUSIC</h1>
                     </div>
                     <div>
-                        <nav>
+                        <!--NABEGAZIO
+                        BARRA-->
+                        <nav id="G">
                             <ul>
-                                <li><a href="../html/hasiera.html">Hasiera</a></li>
-                                <li><a href="../php/langileak.php">Langileak</a></li>
-                                <li><a href="../php/departamentuak.php">Departamentuak</a></li>
+                                <li>
+                                    <a href="../html/hasiera.html">Hasiera</a>
+                                </li>
+                                <li id="desplegablea" class="dropdown">
+                                    <a href="../php/langileak.php">Gure Langileak</a>
+                                    <div id="desplegablea-a">
+                                        <xsl:for-each select="ardurak/ardura">
+                                            <a href="../php/ardura_langile.php?id_ardura={@id}">
+                                                <p>
+                                                    <xsl:value-of select="izena"/>
+                                                </p>
+                                            </a>
+                                        </xsl:for-each>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../php/departamentuak.php">Departamentuak</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -32,10 +51,13 @@
                 <!-- MAIN -->
                 <main>
                     <h2>Departamentuak</h2>
+                    <!--XML dokumentuaren bihurketa-->
                     <xsl:for-each select="departamentuak/departamentua">
-                        <div class="employee-container">
-                            <div class="employee-details">
-                                <h3><xsl:value-of select="izena"/></h3>
+                        <div class="LD">  
+                            <div>
+                                <a href="../php/dpto_langile.php?id_depto={@id}">
+                                    <h3><xsl:value-of select="izena"/></h3>
+                                </a>
                                 <p>Helbidea: <xsl:value-of select="helbidea/kalea"/>, <xsl:value-of select="helbidea/zbk"/>, <xsl:value-of select="helbidea/herria"/></p>
                                 <p>Telefonoa: <xsl:value-of select="telefono"/></p>
                                 <p>Posta: <xsl:value-of select="posta"/></p>

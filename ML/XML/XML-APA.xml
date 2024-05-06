@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="departamentuak.xsl"?>
-<enpresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml-stylesheet type="text/xsl" href="hasiera.xsl"?>
+<enpresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="XSD-APA.xsd">
+                     <izena>APA MUSIC</izena>
     <langileak>
         <langilea>
             <nan>12345678A</nan>
@@ -15,7 +17,7 @@
                 <herria postaKodea="48004">Bilbao</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Zuzendaritza</ardura>
+            <ardura>1</ardura>
             <kontratdata>2010-06-07</kontratdata>
             <soldata>2000</soldata>
             <departamentua>1</departamentua>
@@ -34,7 +36,7 @@
                 <herria postaKodea="48001">Artea</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Analista</ardura>
+            <ardura>2</ardura>
             <kontratdata>2012-03-09</kontratdata>
             <soldata>1800</soldata>
             <departamentua>2</departamentua>
@@ -53,7 +55,7 @@
                 <herria postaKodea="48007">Lekeitio</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Analista</ardura>
+            <ardura>2</ardura>
             <kontratdata>2008-08-14</kontratdata>
             <soldata>1900</soldata>
             <departamentua>3</departamentua>
@@ -72,7 +74,7 @@
                 <herria postaKodea="48012">Donostia</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Langilea</ardura>
+            <ardura>3</ardura>
             <kontratdata>2014-11-17</kontratdata>
             <soldata>2200</soldata>
             <departamentua>4</departamentua>
@@ -91,7 +93,7 @@
                 <herria postaKodea="48000">Eibar</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Langilea</ardura>
+            <ardura>3</ardura>
             <kontratdata>2010-11-05</kontratdata>
             <soldata>2100</soldata>
             <departamentua>1</departamentua>
@@ -110,7 +112,7 @@
                 <herria postaKodea="48000">Bermeo</herria>
                 <probintzia>Bizkaia</probintzia>
             </helbidea>
-            <ardura>Zuzendaritza</ardura>
+            <ardura>1</ardura>
             <kontratdata>2007-06-07</kontratdata>
             <soldata>2500</soldata>
             <departamentua>2</departamentua>
@@ -129,8 +131,8 @@
                 <herria postaKodea="41005">Bilbao</herria>
                 <probintzia>Gipuzkoa</probintzia>
             </helbidea>
-            <ardura>Analista</ardura>
-            <kontratdata></kontratdata>
+            <ardura>2</ardura>
+            <kontratdata>2020-09-04</kontratdata>
             <soldata>1600</soldata>
             <departamentua>3</departamentua>
             <img>../irudiak/iker.jpg</img>
@@ -150,7 +152,7 @@
             <herria postaKodea="48001">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Analista de datos</ardura>
+        <ardura>2</ardura>
         <kontratdata>2012-04-15</kontratdata>
         <soldata>2200</soldata>
         <departamentua>2</departamentua>
@@ -169,7 +171,7 @@
             <herria postaKodea="48002">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Desarrollador</ardura>
+        <ardura>3</ardura>
         <kontratdata>2010-10-20</kontratdata>
         <soldata>2400</soldata>
         <departamentua>3</departamentua>
@@ -188,7 +190,7 @@
             <herria postaKodea="48003">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Gerente de Ventas</ardura>
+        <ardura>1</ardura>
         <kontratdata>2008-07-10</kontratdata>
         <soldata>3000</soldata>
         <departamentua>4</departamentua>
@@ -207,10 +209,10 @@
             <herria postaKodea="48004">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Ingeniero de Software</ardura>
+        <ardura>1</ardura>
         <kontratdata>2015-02-28</kontratdata>
         <soldata>2800</soldata>
-        <departamentua>5</departamentua>
+        <departamentua>1</departamentua>
         <img>../irudiak/javier.jpg</img>
     </langilea>
     <langilea>
@@ -226,10 +228,10 @@
             <herria postaKodea="48005">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Analista Financiero</ardura>
+        <ardura>3</ardura>
         <kontratdata>2013-09-20</kontratdata>
         <soldata>2500</soldata>
-        <departamentua>6</departamentua>
+        <departamentua>3</departamentua>
         <img>../irudiak/elena.jpg</img>
     </langilea>
     <langilea>
@@ -245,10 +247,10 @@
             <herria postaKodea="48006">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Marketing Manager</ardura>
+        <ardura>3</ardura>
         <kontratdata>2014-06-15</kontratdata>
         <soldata>2700</soldata>
-        <departamentua>7</departamentua>
+        <departamentua>2</departamentua>
         <img>../irudiak/pablo.jpg</img>
     </langilea>
     <langilea>
@@ -264,10 +266,10 @@
             <herria postaKodea="48007">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Recursos Humanos</ardura>
+        <ardura>3</ardura>
         <kontratdata>2011-11-05</kontratdata>
         <soldata>2300</soldata>
-        <departamentua>8</departamentua>
+        <departamentua>2</departamentua>
         <img>../irudiak/lucia.jpg</img>
     </langilea>
     <langilea>
@@ -283,10 +285,10 @@
             <herria postaKodea="48008">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Consultor Financiero</ardura>
+        <ardura>2</ardura>
         <kontratdata>2009-09-25</kontratdata>
         <soldata>2600</soldata>
-        <departamentua>9</departamentua>
+        <departamentua>4</departamentua>
         <img>../irudiak/carlos.jpg</img>
     </langilea>
     <langilea>
@@ -302,10 +304,10 @@
             <herria postaKodea="48009">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Analista de Marketing</ardura>
+        <ardura>2</ardura>
         <kontratdata>2016-03-10</kontratdata>
         <soldata>2500</soldata>
-        <departamentua>10</departamentua>
+        <departamentua>1</departamentua>
         <img>../irudiak/sara.jpg</img>
     </langilea>
     <langilea>
@@ -321,10 +323,10 @@
             <herria postaKodea="48010">Bilbao</herria>
             <probintzia>Bizkaia</probintzia>
         </helbidea>
-        <ardura>Desarrollador Web</ardura>
+        <ardura>3</ardura>
         <kontratdata>2017-08-12</kontratdata>
         <soldata>2700</soldata>
-        <departamentua>11</departamentua>
+        <departamentua>1</departamentua>
         <img>../irudiak/alberto2.jpg</img>
     </langilea>
     </langileak>
@@ -374,7 +376,7 @@
             <telefono>(+34) 321 654 987</telefono>
             <posta>legeak@enpresa.eus</posta>
         </departamentua>
-        </departamentuak>departamentuak>
+        </departamentuak>
 
     <ardurak>
         <ardura id="1">
